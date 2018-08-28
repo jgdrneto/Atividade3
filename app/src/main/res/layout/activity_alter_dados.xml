@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlterDadosActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Alterar Dados"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/textView_tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X : "
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/editText_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite um número"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ALTERAR"
+        android:onClick="alterarValor"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CANCELAR"
+        android:onClick="cancelar"/>
+</LinearLayout>
